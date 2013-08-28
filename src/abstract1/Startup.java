@@ -11,8 +11,11 @@ public class Startup {
     
     public static void main(String[] args) {
         
+        HourlyEmployee emp1 = new HourlyEmployee(10, 10);
         
         
+        
+        emp1.getAnnualWages();
         
         
         
