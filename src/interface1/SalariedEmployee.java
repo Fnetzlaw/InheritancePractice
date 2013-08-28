@@ -7,6 +7,18 @@ package interface1;
  *
  * @author netzl_000
  */
-public class SalariedEmployee {
+public class SalariedEmployee implements Employee{
+        
+    private double annualSalary;
+
+    public SalariedEmployee(double annualSalary) {
+        this.annualSalary = annualSalary;
+    }
+
+    @Override
+    public double getAnnualWages() {
+        return annualSalary;
+    }
+    
     
 }

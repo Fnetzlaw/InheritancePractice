@@ -7,6 +7,7 @@ package interface1;
  *
  * @author netzl_000
  */
-public class Employee {
-    
+public interface Employee {
+ 
+    public abstract double getAnnualWages();
 }

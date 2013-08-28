@@ -7,6 +7,17 @@ package interface1;
  *
  * @author netzl_000
  */
-public class SalaryPlusBonusEmployee {
+public class SalaryPlusBonusEmployee implements Employee{
+    private double annualBonus;
+
+    public SalaryPlusBonusEmployee(double annualBonus) {
+        this.annualBonus = annualBonus;
+    }
+    
+    
+    @Override
+    public double getAnnualWages() {
+      return annualBonus;
+    }
     
 }

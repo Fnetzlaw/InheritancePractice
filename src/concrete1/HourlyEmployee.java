@@ -8,6 +8,14 @@ package concrete1;
  *
  * @author netzl_000
  */
-public class HourlyEmployee {
+public class HourlyEmployee extends Employee {
     
+    Employee emp = new Employee();
+
+    public HourlyEmployee(double hourlyRate, double totalHrsForYear) {
+        setHourlyRate(hourlyRate);
+        setTotalHrsForYear(totalHrsForYear);
+        
+        
+    }
 }
