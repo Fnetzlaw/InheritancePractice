@@ -10,74 +10,58 @@ package concrete1;
  */
 public class Employee {
 
-    private double hourlyRate;
-    private double totalHrsForYear;
-    private double annualSalary;
-    private double annualBonus;
+    private int employeeID;
+    private String employeeName;
+    private String employeeJobTitle;
+
+    public Employee(int employeeID, String employeeName, String employeeJobTitle) {
+        this.employeeID = employeeID;
+        this.employeeName = employeeName;
+        this.employeeJobTitle = employeeJobTitle;
+    }
+
+    /**
+     * @return the employeeID
+     */
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    /**
+     * @param employeeID the employeeID to set
+     */
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    /**
+     * @return the employeeName
+     */
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    /**
+     * @param employeeName the employeeName to set
+     */
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+
+    /**
+     * @return the employeeJobTitle
+     */
+    public String getEmployeeJobTitle() {
+        return employeeJobTitle;
+    }
+
+    /**
+     * @param employeeJobTitle the employeeJobTitle to set
+     */
+    public void setEmployeeJobTitle(String employeeJobTitle) {
+        this.employeeJobTitle = employeeJobTitle;
+    }
     
-    public double getAnnualWages() {
-        return hourlyRate * totalHrsForYear;
-    }
     
-    
-
-    /**
-     * @return the hourlyRate
-     */
-    public double getHourlyRate() {
-        return hourlyRate;
-    }
-
-    /**
-     * @param hourlyRate the hourlyRate to set
-     */
-    public void setHourlyRate(double hourlyRate) {
-        this.hourlyRate = hourlyRate;
-    }
-
-    /**
-     * @return the totalHrsForYear
-     */
-    public double getTotalHrsForYear() {
-        return totalHrsForYear;
-    }
-
-    /**
-     * @param totalHrsForYear the totalHrsForYear to set
-     */
-    public void setTotalHrsForYear(double totalHrsForYear) {
-        this.totalHrsForYear = totalHrsForYear;
-    }
-
-    /**
-     * @return the annualSalary
-     */
-    public double getAnnualSalary() {
-        return annualSalary;
-    }
-
-    /**
-     * @param annualSalary the annualSalary to set
-     */
-    public void setAnnualSalary(double annualSalary) {
-        this.annualSalary = annualSalary;
-    }
-
-    /**
-     * @return the annualBonus
-     */
-    public double getAnnualBonus() {
-        return annualBonus;
-    }
-
-    /**
-     * @param annualBonus the annualBonus to set
-     */
-    public void setAnnualBonus(double annualBonus) {
-        this.annualBonus = annualBonus;
-    }
-
-
-
 
 }

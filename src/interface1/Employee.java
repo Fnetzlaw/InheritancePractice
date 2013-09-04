@@ -10,4 +10,8 @@ package interface1;
 public interface Employee {
  
     public abstract double getAnnualWages();
+    
+    public abstract String getEmployeeName();
+    
+    public abstract int getEmployeeID();
 }

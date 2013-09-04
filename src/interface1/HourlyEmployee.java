@@ -9,12 +9,15 @@ package interface1;
  * @author netzl_000
  */
 public final class HourlyEmployee implements Employee {
-
+    private int employeeID;
+    private String employeeFullName;
     private double hourlyRate;
     private double totalHrsForYear;
     
     
-    public HourlyEmployee(double hourlyRate, double totalHrsForYear) {
+    public HourlyEmployee(String employeeFullName, int employeeID, double hourlyRate, double totalHrsForYear) {
+        this.employeeFullName = employeeFullName;
+        this.employeeID = employeeID;
         this.hourlyRate = hourlyRate;
         this.totalHrsForYear = totalHrsForYear;
     }
@@ -23,32 +26,19 @@ public final class HourlyEmployee implements Employee {
     public final double getAnnualWages() {
         return hourlyRate * totalHrsForYear;
     }
-
-    /**
-     * @return the hourlyRate
-     */
-    public final double getHourlyRate() {
-        return hourlyRate;
+    
+    @Override
+    public String getEmployeeName() {
+        return employeeFullName; 
+    }
+    
+    @Override
+    public int getEmployeeID() {
+        return employeeID;
     }
 
-    /**
-     * @param hourlyRate the hourlyRate to set
-     */
-    public final void setHourlyRate(double hourlyRate) {
-        this.hourlyRate = hourlyRate;
-    }
+    
+  
 
-    /**
-     * @return the totalHrsForYear
-     */
-    public final double getTotalHrsForYear() {
-        return totalHrsForYear;
-    }
-
-    /**
-     * @param totalHrsForYear the totalHrsForYear to set
-     */
-    public final void setTotalHrsForYear(double totalHrsForYear) {
-        this.totalHrsForYear = totalHrsForYear;
-    }
+    
 }
